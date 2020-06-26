@@ -1,0 +1,11 @@
+apiVersion: v1  
+kind: Pod 
+metadata: 
+  name: webam-pod
+  labels: 
+    app: webam
+    type: front-end
+spec: 
+  containers: 
+   - name: webam-container
+     image: apacheam:v1

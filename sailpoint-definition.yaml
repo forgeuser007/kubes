@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod 
+metadata: 
+  name: sailpoint-pod
+  labels: 
+    app: sailpoint
+    type: idm
+spec: 
+  containers: 
+   - name: sailpoint-container
+     image: sailpoint:v1

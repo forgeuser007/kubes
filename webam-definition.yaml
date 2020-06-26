@@ -1,0 +1,11 @@
+apiVersion: v1  
+kind: Pod 
+metadata: 
+  name: webam-app
+  labels: 
+    app: webam
+    type: sso
+spec: 
+  containers: 
+   - name: webam-app
+     image: apacheam:v1

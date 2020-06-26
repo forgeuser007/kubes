@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod 
+metadata: 
+  name: openam-pod
+  labels: 
+    app: openam
+    type: sso-server
+spec: 
+  containers: 
+   - name: openam-container
+     image: openam:v3
