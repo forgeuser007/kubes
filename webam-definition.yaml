@@ -5,7 +5,15 @@ metadata:
   labels: 
     app: webam
     type: sso
-spec: 
+spec:
+  hostAliases:
+   - ip: "192.168.56.5"
+     hostnames:
+      - "openam1.example.com"
+      - "ldap.example.com"
+   - ip: "192.168.56.5"
+     hostnames:
+      - "web.example.com"
   containers: 
    - name: webam-app
      image: apacheam:v1
